@@ -15,7 +15,6 @@ class AprovaExameSangue(AprovaExame):
             print("Exame sanguíneo aprovado!")
 
     def verifica_condicoes_exame(self, exame):
-        # implemente as condições específicas do exame de sangue
         pass
 
 class AprovaRaioX(AprovaExame):
@@ -24,14 +23,12 @@ class AprovaRaioX(AprovaExame):
             print("Raio-X aprovado!")
 
     def verifica_condicoes_exame(self, exame):
-        # implemente as condições específicas do exame de raio-x
         pass
 
 class Exame:
     def __init__(self, tipo):
         self.tipo = tipo
 
-# Exemplo de uso:
 exame_sangue = Exame("sangue")
 exame_raio_x = Exame("raio-x")
 
